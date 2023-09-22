@@ -1,0 +1,142 @@
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Font weights
+Default: 400
+Bold: 700
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: #1864ab
+- Tints:
+#e8f0f7
+#bad1e6
+#8cb2d5
+- Shades: 
+#135089
+#0c3256
+
+
+- Greys
+
+#888
+
+#555
+#333
+
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "kalam", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.game {
+  margin: 0 auto;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #fff, #0c3256);
+}
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 7.4rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+header {
+  padding: 3.2rem 4.8rem;
+  margin-bottom: 3.2rem;
+}
+.header-parts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.number {
+  font-size: 1.8rem;
+  padding: 3.6rem 3.6rem;
+  display: block;
+  background-color: #e8f0f7;
+  border-radius: 9px;
+}
+.btn {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+  border-radius: 9px;
+  border: none;
+  font-family: inherit;
+  background-color: #e8f0f7;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0c3256;
+  color: #fff;
+}
+
+.between {
+  font-size: 1.8rem;
+}
+main {
+  padding: 3.2rem 4.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  font-size: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.left {
+  justify-self: center;
+}
+
+.guess {
+  display: block;
+  width: 6.4rem;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #e8f0f7;
+  border-radius: 9px;
+  margin-bottom: 1.2rem;
+}
+.message {
+  margin-bottom: 1.2rem;
+  font-size: 2.4rem;
+}
